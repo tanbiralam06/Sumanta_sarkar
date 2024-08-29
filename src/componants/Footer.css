@@ -117,3 +117,15 @@ p{
     padding: 5px;
   }
 }
+
+.menu-flex ul li a,
+.menu-flex ul li Link {
+  text-decoration: none;
+  color: #fff;
+  transition: color 0.3s ease;
+}
+
+.menu-flex ul li a:hover,
+.menu-flex ul li Link:hover {
+  color: #23527c;
+}

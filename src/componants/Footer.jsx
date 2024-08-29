@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { FaFacebook, FaTwitter, FaWhatsapp } from "react-icons/fa";
 
 import "./Footer.css";
@@ -8,21 +9,21 @@ const Footer = () => {
     <div className="footer-container">
       <div className="flex-container">
         <div className="logo">
-          <a href="/">
-            <img src="/Images/logo-footer.png" alt="" />
-          </a>
+          <Link to="/">
+            <img src="/Images/logo-footer.png" alt="Footer Logo" />
+          </Link>
         </div>
         <div className="menu-flex">
           <ul>
             <h3>PAGES</h3>
             <li>
-              <a href="/">Home</a>
+              <Link to="/">Home</Link>
             </li>
             <li>
-              <a href="/About">About</a>
+              <Link to="/about">About</Link>
             </li>
             <li>
-              <a href="/Articles">Articles</a>
+              <Link to="/articles">Articles</Link>
             </li>
           </ul>
         </div>
@@ -30,17 +31,17 @@ const Footer = () => {
           <ul>
             <h3>SOCIAL</h3>
             <li>
-              <a href="#" target="_blank">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FaFacebook />
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FaTwitter />
               </a>
             </li>
             <li>
-              <a href="#" target="_blank">
+              <a href="#" target="_blank" rel="noopener noreferrer">
                 <FaWhatsapp />
               </a>
             </li>
