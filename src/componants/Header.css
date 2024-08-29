@@ -50,14 +50,16 @@ body {
     align-items: center;
 }
 
-.nav-links a {
+.nav-links a,
+.nav-links Link {
     text-decoration: none;
     color: white;
     font-size: 18px;
     transition: color 0.3s;
 }
 
-.nav-links a:hover {
+.nav-links a:hover,
+.nav-links Link:hover {
     color: #1668e3;
 }
 

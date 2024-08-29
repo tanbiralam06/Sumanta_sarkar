@@ -1,4 +1,5 @@
 import { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 
 function Header() {
@@ -24,12 +25,12 @@ function Header() {
     return (
         <nav className="navbar">
             <div className="logo">
-                <a href="/"><img src="/Images/logo-header.png" alt="Logo" /></a>
+                <Link to="/"><img src="/Images/logo-header.png" alt="Logo" /></Link>
             </div>
             <ul className={`nav-links ${isActive ? 'active' : ''} ${isMobile ? 'mobile' : ''}`}>
-                <li><a href="/" onClick={() => isMobile && setIsActive(false)}>Home</a></li>
-                <li><a href="/About" onClick={() => isMobile && setIsActive(false)}>About</a></li>
-                <li><a href="/Articles" onClick={() => isMobile && setIsActive(false)}>Articles</a></li>
+                <li><Link to="/" onClick={() => isMobile && setIsActive(false)}>Home</Link></li>
+                <li><Link to="/about" onClick={() => isMobile && setIsActive(false)}>About</Link></li>
+                <li><Link to="/articles" onClick={() => isMobile && setIsActive(false)}>Articles</Link></li>
             </ul>
             {isMobile && (
                 <div className={`menu-icon ${isActive ? 'active' : ''}`} onClick={toggleMenu}>
