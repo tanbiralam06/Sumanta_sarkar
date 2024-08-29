@@ -1,0 +1,314 @@
+/* Global Styles */
+body {
+    font-family: "Poppins", sans-serif, "Lora";
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Hero Section */
+.Hero {
+    background-image: url(../../public/Images/home.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 100%;
+    max-width: 100%;
+    height: 100vh;
+}
+
+.Hero #top {
+    display: flex;
+    width: 50%;
+    max-width: 600px;
+    position: relative;
+    top: 50%;
+    left: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+.Hero #top-text {
+    color: #0e0d0d;
+    font-size: 2.4rem;
+    font-weight: 600;
+    font-family: "Lora";
+}
+
+/* Achievements Section */
+.achivements {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(90deg, #2e2929, #3400c6);
+}
+
+.title h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+
+.achivement-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.a-card1 {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    text-align: center;
+    width: 100%;
+    height: 400px;
+    max-width: 300px;
+    border: 2px solid rgb(73, 68, 68);
+    margin: 20px;
+    padding: 1rem;
+    background-color: transparent;
+    border-radius: 15px;
+    box-shadow: 0px 6px 10px rgba(198, 176, 176, 0.1);
+}
+
+.a-card1 p {
+    margin-top: 10px;
+    font-size: 1.1rem;
+    color: #f0eeee;
+}
+
+.a-card1 img {
+    height: 250px;
+    width: 100%;
+    border-radius: 8px;
+}
+
+/* Teachers of sumanta */
+
+.teachers {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(90deg, #2e2929, #3400c6);
+}
+
+.teachers .title h2 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+.teacher {
+    overflow: hidden;
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    /* max-width: 1200px; */
+}
+
+.t-img img {
+    width: 200px;
+    /* max-width: 100%;  */
+    height: auto;
+    border-radius: 50%;
+}
+
+.text-teacher {
+    overflow: hidden;
+    font-size: 18.3px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* right image */
+
+.teacher-right {
+    overflow: hidden;
+    margin: 20px auto;
+    width: 90%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+ .t-img-right img {
+    width: 200px;
+    height: auto;
+    border-radius: 50%;
+} 
+
+.text-teacher-right {
+    overflow: hidden;
+    font-size: 18.3px;
+    line-height: 1.6;
+    text-align: justify;
+}
+
+/* Review section */
+
+.review {
+    padding: 2rem;
+    text-align: center;
+    background: linear-gradient(90deg, #2e2929, #3400c6);
+}
+
+.review-box{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: row;
+    /* align-items: center; */
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.review-box img{
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    margin-top: 20px;
+}
+.reviews{
+    /* border: 2px solid white; */
+    font-size: 16px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+}
+.reviews h4{
+    color: white;
+    font-weight: bolder;
+    margin-top: 1rem;
+}
+
+.reviews p{
+    width: 80%;
+    text-align: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .Hero #top-text {
+        font-size: 1.5rem;
+        padding-right: 10px;
+    }
+    .Hero{
+        /* background-image: url(../../public/Images/home.jpg); */
+        width: 100%;
+        height: 50vh;
+    }
+
+    .title h2 {
+        font-size: 2rem;
+    }
+
+    .a-card1 {
+        width: 90%;
+    }
+
+    .a-card1 p {
+        font-size: 1rem;
+    }
+
+    .teacher {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+    .teacher-right {
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+
+    .t-img  {
+        float: none;
+        margin: 0 0 20px 0;
+    }
+    .t-img-right  {
+        float: none;
+        margin: 0 0 20px 0;
+    }
+
+    .text-teacher {
+        font-size: 15px;
+        width: 90%;
+        text-align: justify;
+    }
+    .text-teacher-right {
+        font-size: 15px;
+        width: 90%;
+        text-align: justify;
+    }
+    .review-box{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .reviews{
+        width: 80%;
+    }
+}
+
+@media (max-width: 480px) {
+    
+    .Hero #top-text {
+        font-size: 1rem;
+        padding-right: 10px;
+    }
+    .Hero{
+        /* background-image: url(../../public/Images/home.jpg); */
+        width: 100%;
+        height: 40vh;
+    }
+
+    .title h2 {
+        font-size: 1.8rem;
+    }
+
+    .a-card1 {
+        width: 100%;
+    }
+
+    .a-card1 p {
+        font-size: 0.9rem;
+    }
+
+    .a-card1 img {
+        height: 200px;
+        width: 200px;
+    }
+
+    .teacher {
+        margin: 20px auto;
+        width: 95%;
+    }
+
+    .text-teacher {
+        font-size: 14px;
+    }
+
+    .teachers .title h2 {
+        font-size: 2rem;
+    }
+
+    .t-img img {
+        width: 100%;
+    }
+}

@@ -1,0 +1,74 @@
+/* src/components/ArticlePage.css */
+.article-page {
+  display: flex;
+  background: linear-gradient(90deg, #2e2929, #3400c6);
+  /* background-color: #fff; */
+}
+
+.article-page h4{
+  color: #fff;
+}
+
+
+
+.sidebar {
+  width: 20%;
+  position: sticky;
+  top: 0;
+  left: 0;
+  height: 100vh;
+  background: rgb(143, 144, 190);
+  padding: 20px;
+  overflow-y: auto;
+  opacity: 80%;
+}
+.sidebar li a h2{
+  color: black;
+  font-size: 1rem;
+}
+
+.article-page .content {
+  margin-left: 2%;
+  padding: 20px;
+  width: 70%;
+  text-align: justify;
+}
+
+.sidebar li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.sidebar a {
+  text-decoration: none;
+  color: #000;
+}
+
+.is-current a {
+  color: blue;
+  font-weight: bold;
+}
+
+
+
+@media (max-width: 768px) {
+  .article-page {
+      flex-direction: column; /* Stack Sidebar and Content vertically */
+  }
+  .sidebar{
+    position: relative;
+    height: 100%;
+  }
+  
+  .article-page .content{
+    /* margin-left: 2%; */
+    padding: 10px 10px;
+    /* border: 2px solid red; */
+    width: 95%;
+  }
+
+  .sidebar, 
+  .content {
+      width: 100%;  /*Full width for both Sidebar and Content*/
+  }
+}

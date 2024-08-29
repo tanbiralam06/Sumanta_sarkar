@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Poppins", sans-serif;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    height: 80px;
+    overflow: hidden;
+    /* border: 2px solid white; */
+}
+.navbar {
+    height: 80px; /* Set a fixed height for the navbar */
+    overflow: hidden; /* Prevent content from overflowing */
+}
+
+.logo {
+    height: 100%; /* Make the logo container full height of the navbar */
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+    margin-left: 8px;
+}
+
+.logo img {
+    height: 100px; /* Increase the logo size to 90% of the navbar height */
+    width: auto; /* Maintain aspect ratio */
+    object-fit: contain; /* Ensure the entire logo is visible */
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    padding-top: 10px;
+}
+
+.nav-links li {
+    margin-right: 40px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #1668e3;
+}
+
+.menu-icon {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.menu-icon span {
+    height: 3px;
+    width: 25px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    
+    .nav-links.mobile {
+        display: none;
+        position: fixed;
+        top: 80px;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #333333;
+        height: 40vh;
+        z-index: 1000; /* High z-index to ensure it's above other content */
+      }
+    
+      .nav-links.mobile.active {
+        display: flex;
+        flex-direction: column;
+        justify-content: start;
+        align-items: center;
+      }
+    
+      .menu-icon {
+        z-index: 1001; /* Slightly higher than the menu to ensure it's clickable */
+      }
+
+    .nav-links li {
+        margin: 20px 0;
+    }
+
+    .menu-icon {
+        display: flex;
+    }
+
+    .nav-links.active {
+        transform: translateX(0%);
+    }
+    .logo img{
+        height: 100px;
+        width: auto;
+        /* margin-left: 0.5rem; */
+        
+    }
+}
